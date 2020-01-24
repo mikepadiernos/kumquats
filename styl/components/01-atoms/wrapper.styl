@@ -1,0 +1,28 @@
+// WRAPPER
+
+#main-wrapper
+	&.main-wrapper
+		&:before
+			// border-top 8px solid $primary-color
+			content ''
+			background-color primary
+			height 8px
+			width 100%
+			position fixed
+			top 0
+			left 0
+			right 0
+			bottom 0
+			z-index 1
+
+// @media (max-width $screen-sm-max)
++tablet()
+	body
+		#main-wrapper
+			flex-direction column
+			border-top 0
+
+// @media (min-width $screen-md-min)
++desktop()
+	#main-wrapper
+		display flex

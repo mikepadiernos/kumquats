@@ -1,0 +1,28 @@
+// HEADER
+
+body
+  &.seeds-toolbar
+    #header
+      &.header
+        left 55px
+  #header
+    &.header
+      width auto
+      height auto
+      top 8px
+      right 0
+      left 0
+      transition width 0.5s ease
+
++above('l')
+  body
+    #header
+      &.header
+        display flex
+        flex-flow column wrap
+        height 100vh
+        overflow scroll
+        overflow-y auto
+        overflow-x hidden
+        position fixed
+        width 200px

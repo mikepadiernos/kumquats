@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--canvas',
+    'canvas',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if content.header %}
+    <div {{ region_attributes.header.addClass('layout__region', 'layout__region--header', 'canvas-header') }}>
+      {{ content.header }}
+    </div>
+    {% endif %}
+
+    {% if content.content %}
+    <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content', 'canvas-content') }}>
+      {{ content.content }}
+    </div>
+    {% endif %}
+
+  </div>
+{% endif %}

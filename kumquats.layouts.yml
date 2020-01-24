@@ -1,0 +1,72 @@
+layout_homepage:
+  label: 'Homepage'
+  path: layouts/homepage
+  template: layout--homepage
+  library: kumquats/homepage
+  category: 'Kumquats: 1'
+  default_region: top
+  icon_map:
+    - [top]
+    - [middle]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    middle:
+      label: Middle
+    bottom:
+      label: Bottom
+      
+layout_card:
+  label: 'Card'
+  path: layouts/card
+  template: layout--card
+  library: kumquats/card
+  category: 'Kumquats: 1'
+  default_region: top
+  icon_map:
+    - [header]
+    - [body]
+    - [footer]
+  regions:
+    header:
+      label: Header
+    body:
+      label: Body
+    footer:
+      label: Footer
+      
+layout_canvas:
+  label: 'Canvas'
+  path: layouts/canvas
+  template: layout--canvas
+  library: kumquats/canvas
+  category: 'Kumquats: 1'
+  default_region: content
+  icon_map:
+    - [header]
+    - [content]
+  regions:
+    header:
+      label: Header
+    content:
+      label: Content
+
+layout_editorial:
+  label: 'Editorial'
+  path: layouts/editorial
+  template: layout--editorial
+  library: kumquats/editorial
+  category: 'Kumquats: 2'
+  default_region: left
+  icon_map:
+    - [left]
+    - [right]
+    - [bottom]
+  regions:
+    left:
+      label: Left
+    right:
+      label: Right
+    bottom:
+      label: Bottom

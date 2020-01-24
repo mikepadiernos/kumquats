@@ -1,0 +1,69 @@
+// LOGIN FORM
+
+#main-wrapper
+	#login-wrapper
+		display flex
+		width 100%
+		height 100vh
+		justify-content center
+		align-content baseline
+		flex-direction row
+		flex-wrap wrap
+		padding-top 100px
+		#login-container
+			padding 1.5rem
+			width 35%
+			transition width 0.5s ease
+			#top_part
+				display flex
+				justify-content center
+				h1
+					&#the_logo
+						height auto
+						margin-bottom 1.5rem
+						padding 0
+						width auto
+						a
+							img
+								width 5rem
+			#login_main_part
+				.back_link
+					display block
+					margin-bottom 1.25rem
+			// .password_link,
+			// .login_link
+				
+	// #login_box
+	// 	input[type="text"],
+	// 	input[type="password"]
+	// 		width 100%
+	// 		border 1px #ccc solid
+	// 		border-radius 2px
+	// 		padding 9px
+	// 		font-size 15px
+	#login_main_part,
+	#regi_main_part
+		padding 0
+		box-shadow 0 0 0 0 transparent
+		margin 1rem 0
+
+// @media (max-width $screen-sm-max)
+// +above('m')
++between('xs', 'm')
+	#main-wrapper
+		#login-wrapper
+			align-content baseline
+			#login-container
+				width 90%
+				padding 20px
+		#login_box
+			width 100%
+			padding 50px 4%
+
+			
++between('m', 'xl')
+	#main-wrapper
+		#login-wrapper
+			align-content baseline
+			#login-container
+				width 50%

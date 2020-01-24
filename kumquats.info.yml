@@ -1,0 +1,19 @@
+name: Kumquats
+type: theme
+description: 'Bare-bone theme, used for my portfolio using Stylus.'
+core: 8.x
+regions:
+  header:       "Header"
+  navigation:   "Navigation"
+  hero:         "Hero"
+  highlight:    "Highlight"
+  help:         "Help"
+  content:      "Content"
+  sidebar:      "Sidebar"
+  footer:       "Footer"
+  spotlight:    "Spotlight"
+  biography:    "Biography"
+  collections:  "Collections"
+  disabled:     "Disable"
+libraries:
+  - kumquats/global

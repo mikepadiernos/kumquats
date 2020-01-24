@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a one-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--card',
+    'card',
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+  
+    {% if content.header %}
+    <div {{ region_attributes.header.addClass('layout__region', 'layout__region--header', 'card-header') }}>
+      {{ content.header }}
+    </div>
+    {% endif %}
+    
+    {% if content.body %}
+    <div {{ region_attributes.body.addClass('layout__region', 'layout__region--body', 'card-body') }}>
+      {{ content.body }}
+    </div>
+    {% endif %}
+    
+    {% if content.footer %}
+    <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer', 'card-footer') }}>
+      {{ content.footer }}
+    </div>
+    {% endif %}
+    
+  </div>
+{% endif %}
