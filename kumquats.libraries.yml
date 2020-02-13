@@ -3,3 +3,7 @@ global:
   css:
     base:
       css/theme.css: {}
+  js:
+    js/kumquats.js: {}
+  dependencies:
+    - core/jquery

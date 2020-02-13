@@ -14,6 +14,7 @@ regions:
   spotlight:    "Spotlight"
   biography:    "Biography"
   collections:  "Collections"
+  float:        "Float"
   disabled:     "Disable"
 libraries:
   - kumquats/global

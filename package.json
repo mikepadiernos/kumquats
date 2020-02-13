@@ -5,6 +5,7 @@
   "author": "M. Padiernos",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer-stylus": "^1.0.0",
     "axis": "^1.0.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -16,5 +17,8 @@
     "rupture": "^0.7.1",
     "stylus": "^0.54.7",
     "typographic": "^3.0.0"
+  },
+  "dependencies": {
+    "waypoints": "^4.0.1"
   }
 }

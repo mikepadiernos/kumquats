@@ -67,7 +67,7 @@
     {#{% endif %}#}
   
     <!-- main content - start -->
-    <main role="content" id="main-content" class="content">
+    <main role="content" id="main-content" class="main-content">
       <div class="container">
         
         {% if page.highlight %}
@@ -82,32 +82,41 @@
     </main>
     <!-- main content - end -->
 				
-		{% if page.biography %}
+		{#{% if page.biography %}#}
 			<section id="biography" class="section section-biography">
 				<div class="container container-biography">
 					{{ page.biography }}
 				</div>
 			</section>
-		{% endif %}
+		{#{% endif %}#}
 				
-		{% if page.collections %}
+		{#{% if page.collections %}#}
 			<section id="collections" class="section section-collections">
 				<div class="container container-collections">
 					{{ page.collections }}
 				</div>
 			</section>
-		{% endif %}
+		{#{% endif %}#}
 				
     <!-- footer - start -->
     <footer role="contentinfo" id="footer" class="footer">
       <div class="container">
         {{ page.footer }}
+        <span class="back-top">
+          <a href="#hero" class="back-top-link fa fa-caret-up">
+            Back to top
+          </a>
+        </span>
       </div>
     </footer>
     <!-- footer - end -->
      
   </div>
   <!-- content - end -->
+
+  <span class="block block-float">
+    {{ page.float }}
+  </span>
   
 </div>
 <!-- main wrapper - end -->

@@ -1,0 +1,55 @@
+// BUTTONS
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+	button( primary )
+	border-radius 0
+	color white
+	display block
+	height 2.5rem
+	margin-bottom 0
+
+.button
+	padding 1rem
+
+.button-group
+	display grid
+	grid-template-columns repeat(auto-fit, minmax(49%, 1fr))
+	grid-gap 6px
+	width 100%
+	.button-link
+		width 100%
+		a
+			&.btn
+				button( primary )
+				align-items center
+				border-radius 0
+				color white
+				display flex
+				font-size 20px
+				font-weight normal
+				height auto
+				justify-content center
+				line-height 1.5
+				padding 1rem
+				width auto
+				i
+					margin-right 6px
+
++above(l)
+	.button-group
+		display flex
+		width auto
+		.button-link
+			a
+				&.btn
+					// width auto
+					// height 2.5rem
+					font-size 16px
+					line-height 1.5
+					margin-right 6px
+					padding 0.2375rem 0.75rem
+					i
+						margin-right 6px

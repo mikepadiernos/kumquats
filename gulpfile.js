@@ -1,4 +1,5 @@
-const axis 					= require('axis'),
+const	auto					= require('autoprefixer-stylus'),
+			axis 					= require('axis'),
 			cssnano 			= require('cssnano'),
 			gulp 					= require('gulp'),
 			nib 					= require('nib'),
@@ -14,9 +15,9 @@ gulp.task('theme', () => {
     cssnano
 		];
 
-	return gulp.src('./styl/theme.styl')
+	return gulp.src('./source/theme.styl')
 		.pipe(stylus({
-			use: [axis(), nib(), rupture(), typographic()]
+			use: [auto(), axis(), nib(), rupture(), typographic() ]
 		}))
 		// .pipe(postcss(processors))
 		.pipe(gulp.dest('./css'));
@@ -28,7 +29,7 @@ gulp.task('seeds', () => {
     cssnano
   ];
 
-  return gulp.src('./styl/seeds.styl')
+  return gulp.src('./source/seeds.styl')
     .pipe(stylus({
       use: [nib(), rupture(), typographic(), axis()]
     }))
